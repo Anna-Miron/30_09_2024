@@ -56,3 +56,38 @@ console.log(fruits);
 
 const allFruits = fruits.concat(fruitsSubset);
 console.log(allFruits);
+
+//JS Objects
+//la cheia name punem stringul john
+const person = {
+name: 'John',
+surname: 'Doe',
+age: '32',
+address: {
+    street: 'Love Lane',
+    number: '32'
+},
+contact: {
+    phone: '0747188956',
+    email: 'j_doe@unknown.com'
+},
+hobbies: ['hiking', ' fishing', 'chess']
+}
+
+// punem un label 
+console.log('person name: ', person.name);
+console.log('person hobbies: ', person.hobbies);
+console.log('person phone no: ', person.contact.phone);
+console.log('person surname: ', person['surname']);
+
+//modificarea proprietatilor unui obiect
+person.name = 'George';
+console.log('person: ', person);
+
+//compararea unui obiect
+const obj1 = {a: 1};
+const obj2 = {a: 1};
+console.log('obj1 === obj2: ', obj1 === obj2);
+
+const obj3 = obj1;
+console.log('obj3 === obj1: ', obj3 === obj1);
