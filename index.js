@@ -153,6 +153,6 @@ console.log(FormatedDate);
 
 const newDate = new Date(); //am instantiat data de astazi
 const timeStamp = newDate.getTime(); //ne da time stamp 
-console.log(newDate);
+console.log(newDate); 
 const fromTimeStamp = new Date(timeStamp - 500000); //din timpul initial, am scazut 500000 milisecunde
 console.log(fromTimeStamp);
